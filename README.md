@@ -1,4 +1,4 @@
-## USC CSCI455x CoinSimulator
+## USC CSCI455x Project1: CoinSimulator
 
 **CoinSimViewer.java:**  
 Contains the main method. Prompts for the number of trials, and creates the JFrame containing the CoinSimComponent. Besides CoinSimComponent, this class does not depend on any of the other classes.
