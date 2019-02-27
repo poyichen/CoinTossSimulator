@@ -9,10 +9,6 @@
  * Simulates trials of repeatedly tossing two coins and allows the user to access the
  * cumulative results.
  * 
- * NOTE: we have provided the public interface for this class.  Do not change
- * the public interface.  You can add private instance variables, constants, 
- * and private methods to the class.  You will also be completing the 
- * implementation of the methods given. 
  * 
  * Invariant: getNumTrials() = getTwoHeads() + getTwoTails() + getHeadTails()
    @param trials  the number of trials of Coin Toss
@@ -33,6 +29,7 @@ public class CoinTossSimulator {
       numOfTwoHeads = 0;
       numOfTwoTails = 0;
       numOfHeadTails = 0;
+      Random tossResults = new Random();
    }
 
 
@@ -43,8 +40,7 @@ public class CoinTossSimulator {
       @param numTrials  number of trials to for simulation; must be >= 1
       @param coinA & coinB represent the results, true: Head; false: Tail 
     */
-   public void run(int numTrials) {
-      Random tossResults = new Random(); 
+   public void run(int numTrials) { 
       trials += numTrials;
       for (int test = 1; test <= numTrials; test++) {
          boolean coinA = tossResults.nextBoolean();
